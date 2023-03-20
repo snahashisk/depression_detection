@@ -20,7 +20,7 @@ const cx = 150;
 const cy = 125;
 const iR = 75;
 const oR = 125;
-const value = 10;
+// const value = 10;
 
 const needle = (value, data, cx, cy, iR, oR, color) => {
   let total = 0;
@@ -72,7 +72,7 @@ export default class Charts extends PureComponent {
               <Cell key={`cell-${index}`} fill={entry.color} />
             ))}
           </Pie>
-          {needle(this.props.value, data, cx, cy, iR, oR, "#d0d000")}
+          {needle(this.props.value, data, cx, cy, iR, oR, "#1098F7")}
         </PieChart>
       </div>
     );
